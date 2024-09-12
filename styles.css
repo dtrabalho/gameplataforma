@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #081826;
+}
+
+canvas {
+  image-rendering: pixelated;
+  background-color: #0B2740;
+  border: 2px solid #123C73;
+}
+
+#gameCanvas {
+  width: 320px;
+  height: 320px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #0B2740;
+    touch-action: none; /* Impede o zoom em dispositivos móveis */
+}
+
+#gameCanvas {
+    display: block;
+    background: #0B2740;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+}
+
+.joystick-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joystick {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: relative;
+    transition: opacity 0.3s;
+}
+
+.joystick:hover {
+    opacity: 0.7;
+}
+
+.joystick-knob {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.joystick-knob:hover {
+    opacity: 0.7;
+}
+
+.action-button {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.action-button:hover {
+    opacity: 0.7;
+}
+
+.toggle-joystick {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #FF0000;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.toggle-joystick:hover {
+    opacity: 0.7;
+}
